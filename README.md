@@ -45,15 +45,40 @@ Donors interact directly with the smart contract — no intermediaries or centra
 ---
 
 ## 🧱 Architecture / Workflow
-1. **Admin** logs in via MetaMask and verifies NGOs on the blockchain.
-2. **VerifiedNGOs** register their causes with description.
-3. **Donors** choose from the causes registered by verified NGOs and donate using MetaMask.
-4. **NGOs** withdraw funds only for disaster-related causes.
-5. **All actions** (donation, withdrawal, registration) are recorded as events on-chain.
+
+The Disaster Aid Tracker is built around a transparent and permissioned flow of actions:
+
+1. **Admin Verification**
+   - Admin logs in via MetaMask.
+   - Admin reviews NGO applications and verifies them on the Ethereum Sepolia testnet via the smart contract.
+   - Only verified NGOs can interact with donation logic.
+
+2. **NGO Cause Registration**
+   - Verified NGOs can register one or more disaster-related causes.
+   - Each cause includes a title, description, and requested funding amount.
+   - Causes are stored on-chain using Solidity mappings or structs.
+
+3. **Donor Interaction**
+   - Any user with MetaMask connected to Sepolia can view verified causes.
+   - Donors contribute ETH directly to the cause via the smart contract.
+   - Each donation is recorded as an **event** with donor address, amount, and timestamp.
+
+4. **Funds Withdrawal**
+   - NGOs can withdraw funds **only** if:
+     - They are verified.
+     - The funds are linked to their cause.
+     - The purpose is for a disaster-related reason (enforced by app policy).
+   - Withdrawals emit events to maintain transparency.
+
+5. **On-Chain Logging**
+   - All critical actions (verification, donations, registrations, withdrawals) emit Solidity events.
+   - This ensures full transparency, auditability, and immutability on the Ethereum blockchain.
 
 
+[ Donor ] → [ MetaMask ] → [ Smart Contract ] ← [ MetaMask ] ← [ Verified NGO ]
+                                             ↑
+                                            [ Admin (verifies NGOs) ]
 
----
 
 ## 🖥️ Getting Started
 
