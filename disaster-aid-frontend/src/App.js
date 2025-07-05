@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FaUser, FaWallet, FaHandsHelping, FaUserShield } from "react-icons/fa";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import RegisterCause from "./components/RegisterCause";
 import Donate from "./components/Donate";
@@ -24,7 +23,7 @@ function App() {
       setAccount(acc);
 
       // OPTIONAL: Auto set role if address is admin
-      if (acc.toLowerCase() === "0x963d8cef95393e3647091A07727a7D00C6E9Df2c".toLowerCase()) {
+      if (acc.toLowerCase() === "0x2947Bee8307B486Be0743754eBab34015f983051".toLowerCase()) {
         setRole("admin");
       }
     } else {
@@ -103,8 +102,11 @@ function App() {
         )}
 
         {/* Shared by all */}
+        {/* Shared by all */}
         <CauseList />
-        <DonationHistory />
+        <p className="text-gray-500 text-sm mt-4">
+          Donation history feature is disabled in this version.
+        </p>
       </div>
     </div>
   );
