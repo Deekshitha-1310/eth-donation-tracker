@@ -45,11 +45,11 @@ Donors interact directly with the smart contract — no intermediaries or centra
 ---
 
 ## 🧱 Architecture / Workflow
-
 1. **Admin** logs in via MetaMask and verifies NGOs on the blockchain.
-2. **Donors** choose from verified NGOs and donate using MetaMask.
-3. **NGOs** withdraw funds only for disaster-related causes.
-4. **All actions** (donation, withdrawal, registration) are recorded as events on-chain.
+2. **VerifiedNGOs** register their causes with description.
+3. **Donors** choose from the causes registered by verified NGOs and donate using MetaMask.
+4. **NGOs** withdraw funds only for disaster-related causes.
+5. **All actions** (donation, withdrawal, registration) are recorded as events on-chain.
 
 
 
