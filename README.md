@@ -103,6 +103,31 @@ https://youtu.be/GxbBypQeWrY
 
 ```bash
 git clone https://github.com/Deekshitha-1310/eth-donation-tracker.git
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Create a .env File
+In the root directory, create a .env file and add the following:
+
+API_URL=YOUR_ALCHEMY_OR_INFURA_RPC_URL
+PRIVATE_KEY=YOUR_WALLET_PRIVATE_KEY
+CONTRACT_ADDRESS=DEPLOYED_CONTRACT_ADDRESS
+
+🔐 Important: This file is ignored in .gitignore. Do not share it publicly.
+
+4️⃣ Compile the Smart Contracts
+npx hardhat compile
+
+5️⃣ Deploy the Smart Contract
+To deploy on Sepolia testnet:
+npx hardhat run scripts/deploy.js --network sepolia
+
+6️⃣ Run the Frontend (if included)
+If your frontend is in the disaster-aid-frontend/ folder:
+cd disaster-aid-frontend
+npm install
+npm run dev
 cd eth-donation-tracker
 
 
