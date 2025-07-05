@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.connect-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #1d63ed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.connect-btn:hover {
+  background-color: #004cc2;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 8px;
+  margin: 6px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #29a329;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #208020;
+}
+
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+h3 {
+  color: #222;
+  margin-top: 20px;
+}
+
+.role-select {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.verify-card {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing {
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.launch-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "eth-donation-tracker",
+  "version": "1.0.0",
+  "description": "A decentralized Web3 platform to transparently track donations for disaster relief efforts using Ethereum smart contracts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deekshitha-1310/eth-donation-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deekshitha-1310/eth-donation-tracker/issues"
+  },
+  "homepage": "https://github.com/Deekshitha-1310/eth-donation-tracker#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "hardhat": "^2.25.0"
+  }
+}
