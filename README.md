@@ -64,5 +64,6 @@ git clone https://github.com/Deekshitha-1310/eth-donation-tracker.git
 cd eth-donation-tracker
 
 
-License
-This project is licensed under the MIT License. See LICENSE for more details
+
+
+
