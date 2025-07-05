@@ -79,6 +79,7 @@ The Disaster Aid Tracker is built around a transparent and permissioned flow of 
                                              ↑
                                             [ Admin (verifies NGOs) ]
 
+
 🧠 AI TOOLS USED:
 ChatGPT (OpenAI)
 Used for:
@@ -91,8 +92,10 @@ Writing README.md and project documentation
 
 Debugging Git and deployment issues
 
+
 🎥 Demo Video:
 https://youtu.be/GxbBypQeWrY
+
 
 ## 🖥️ Getting Started
 
