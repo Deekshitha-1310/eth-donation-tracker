@@ -78,7 +78,8 @@ The Disaster Aid Tracker is built around a transparent and permissioned flow of 
 [ Donor ] → [ MetaMask ] → [ Smart Contract ] ← [ MetaMask ] ← [ Verified NGO ]
                                              ↑
                                             [ Admin (verifies NGOs) ]
-🧠 AI Tools Used:
+
+🧠 AI TOOLS USED:
 ChatGPT (OpenAI)
 Used for:
 
